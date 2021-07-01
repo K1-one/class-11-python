@@ -1,0 +1,19 @@
+print ("capital of %s is %s" %('india', 'delhi'))
+
+# write the output in notebook
+
+#in the above example %s is used for string formatting with print statement
+#python supports formtatting values into string if %s is used it is also known
+#as place holder
+
+#write down this program
+
+# here starts the second example
+a = 10
+b = 20
+c = a + b
+
+print('the addition of %d and %d is %d' %(a,b,c))
+
+#write down the output
+#don't watch avrodh, sherni (majumdar sir recommended movies)
