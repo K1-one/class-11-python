@@ -1,0 +1,25 @@
+def fun1():
+    a = int(input('enter a number '))
+    b = int(intput('enter a number '))
+    c = a + b
+    return c
+
+
+t = fun1
+
+print('answer is = ', t)
+
+
+#homework
+#write a program to print a table upto 10
+# बुद्धिमानो ये वाला प्रोग्राम कॉपी मत करना सर ने while loops नहीं पढाये है | खुद से लिखो |
+
+def table():
+    n1 = int(input('enter no. '))
+    n2 = int(1)
+    n3 = int(input('enter the limit of table '))
+    while n2 <= n3:
+        print(n1, 'x', n2, '=', n1 * n2)
+        n2 = n2 + 1
+
+table()
