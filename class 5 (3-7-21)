@@ -1,0 +1,50 @@
+#{directly assigning value
+#variable = Constant
+#(object)
+#example a = 10}
+
+#question 1 write a program to input a number to get output as the multiplication
+#table
+
+a = int(input("enter a no. "))
+print('%d * 1 = %d' %(a, a*1))
+print('%d * 2 = %d' %(a, a*2))
+print('%d * 3 = %d' %(a, a*3))
+print('%d * 4 = %d' %(a, a*4))
+print('%d * 5 = %d' %(a, a*5))
+print('%d * 6 = %d' %(a, a*6))
+print('%d * 7 = %d' %(a, a*7))
+print('%d * 8 = %d' %(a, a*8))
+print('%d * 9 = %d' %(a, a*9))
+print('%d * 10 = %d' %(a, a*10))
+
+
+# write a program to make a report card for a child with few subjects and
+#average
+# get the output as
+
+
+#Report Card
+#Roll No. :-
+#Name :-
+#_________________________________
+#Subject     m.m     m.o
+#phy         100     -P
+#chem        100     -c
+#maths       100     -m
+#________________________________
+#            300     (total)
+#________________________________
+#percentage - %
+
+# sir program
+roll = int(input("enter your roll no. : "))
+name = input("enter your name ")
+phy = int(input("enter marks in physics"))
+chem = int(input("enter marks in chemistry "))
+maths = int(input("enter marks in maths "))
+total = phy + chem + maths
+avg = total/3
+print("REPORT CARD")
+print("-----------")
+#sir class got over 
