@@ -1,0 +1,388 @@
+'''n = int(input(('enter the nimber of elements you want to enter ')))
+arr = [1,2,3,4,5,6,7,7,89,8,98,9,856,7,4,56,2,5,6,134,513]
+for i in range(0,n):
+    new_element = int(input('enter an element '))
+    arr.insert(int(len(arr) + 1), new_element)
+
+print('the maximum value is', max(arr))
+arr.sort()
+print(arr)
+
+my_list= [101,101,101,101,201,201,201,201]
+for i in range(0,len(my_list)-1):
+    print(my_list[i],':',i, end=" \t\t")
+
+a = [ 12,32,34,45,57,88]
+e = []
+d = []
+for i in range(0,len(a)):
+    if a[i] % 2 == 0 :
+        e.append(a[i])
+    else:
+        d.append(a[i])
+print('frequency of even numbers', len(e),'even number list', e)
+print('odd number number', len(d), 'odd num list', d)
+
+
+
+a = [ 12,32,34,45,57,88,125,55,85,90]
+print('initial list', a)
+for i in range(0,len(a)):
+    if a[i] % 5 == 0:
+        a[i] = (int(a[i]/5))
+    else:
+        a[i]= (int(a[i]*2))
+
+
+print('the updated list',a)
+
+
+arr = [12,32,34,45,57,88]
+print(arr)
+for i in range(0,len(arr),2):
+    arr[i], arr[i + 1] = arr[i + 1], arr[i]
+
+
+print(arr)
+
+
+
+a = [ 12,32,34,45,57,88]
+sum = 0
+for i in range(0,len(a)):
+    sum = sum + a[i]
+
+print(a, sum)
+
+
+a = [ 12,32,34,45,57,88]
+print(a)
+a.insert(2,['this','is','a','new','list'])
+print(a)
+
+
+a = [ 12,32,34,45,57,88]
+n = int(input('enter the index of the number o be rempved '))
+if n >= len(a):
+    print('two larnge value')
+else:
+    a.remove(a[n])
+    print(a)
+
+
+a = [ 92,2,74,45,87,18]
+print(a)
+for i in range(0,len(a)-1):
+    for j in range(i+1,len(a)):
+        if a[i] > a[j]:
+            a[i], a[j] = a[j], a[i]
+print(a)
+
+
+# do this in another way
+def split(a):
+    b = []
+    c = ""
+    for i in range(0,len(a)):
+        b.append(a[i])
+    for i in range(0,len(b)):
+        c += b[i]
+    return c
+
+a = [ 12,32,34,45,57,88]
+n = []
+k = ""
+for j in range(0,len(a)):
+     n.append(a[j])
+print(n)
+for i in range(0,len(a)):
+    b = split(str(a[i]))
+    n.append(b)
+print(n)
+for i in range(0,len(n)):
+    n[i] = int(n[i])
+
+list = [12, 32, 34, 45, 57, 88]
+print('the original list is ', list)
+for i in range(0, len(list)):
+    b = 1
+    num = list[i]
+    sum = 0
+    while b != 0:
+        a = num/10
+        b = int(a)
+        c = b*10
+        d = int(num - c)
+        sum = sum + d
+        num = b
+    print(list[i],'gives the sum of', sum)
+# try to print the sum of these also like the total sum
+
+
+
+a = []
+ch = "y"
+while ch == 'y':
+    a.append(input('enter an element '))
+    ch = input('add another element (y/n)')
+print(a)
+
+# MATRIX
+
+
+r = int ( input ( 'no. of rows , m = ' ) )
+c = int ( input ( 'no. of columns , n = ' ) )
+matrix = [ ] # matrix as list is declared
+# The no. of rows
+for i in range( r ) :
+    a = [ ] # a sub list is declared
+    for j in range( c ) :
+        print('Enter value for row ',i,' Col ',j,' : ',)
+        a.append(int(input( ) ) ) # Sub list is appended
+    matrix.append(a)
+print(matrix)
+prev_i = 0
+# for i in range(r):
+#     for j in range(c):
+#         temp = i
+#         if i != prev_i:
+#             print('\n')
+#             prev_i += 1
+#             print('prev_i is', prev_i,end=' ')
+#             print('value of i and j are', i, j)
+#         else:
+#             print(matrix[i][j], end='\t')
+#             print('value of i and j are',i ,j)
+#         if j == c:
+#             prev_i = int(i - 1)
+#         else:
+#             pass
+for i in range(0,r):
+    for j in range(0,c):
+ ,       if j == c-1:
+            print(matrix[i][j], end='\n')
+        else:
+            print(matrix[i][j], end='\t')
+
+
+matrix = [
+    [1,2],
+    [3,6]
+]
+print(matrix[1][1])
+
+r = int(input('number of rows '))
+c = int(input('number of columns '))
+matrix = []
+for i in range(r):
+    a = []
+    for j in range(c):
+        print('enter element for row',i,'column',j,' ')
+        a.append(input(' '))
+    matrix.append(a)
+print('over')
+print(matrix)
+for i in range(r):
+    for j in range(c):
+        if j == c-1:
+            print(matrix[i][j], end = '\n')
+        else:
+            print(matrix[i][j], end = '\t')
+
+
+
+a = [ [1,2,7] , [3,4,8] , [ 5,6,9]]
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        if j == len(a[i]) - 1:
+            print(a[i][j], end='\n')
+        else:
+            print(a[i][j], end='\t')
+
+
+arr = [ [1,2] , [3,4] , [ 5,6]]
+le1 = len(arr)
+print('List in the form of Double Dimension ')
+for i in range(0, le1) :
+    le2 = len(arr[i])
+    for j in range (0,le2) :
+        print(arr[i][j],end ="\t")
+    print("\n")
+
+a = [ [3,2,3] , [9,8,6] , [7,8,9]]
+print('the 3D ray is: ')
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        print(a[i][j], end='\t')
+    print('\n')
+lft_sum = 0
+rgt_sum = 0
+x = 0
+y = 2
+for i in range(len(a)):
+    k = int(a[i][i])
+    lft_sum = lft_sum + k
+print('the sum left diagonal is ', lft_sum)
+for i in range(len(a)):
+    k = a[x][y]
+    x += 1
+    y -= 1
+    rgt_sum = rgt_sum + k
+print('sum of right diagonal ', rgt_sum)
+
+# SUM OF ROW
+a = [ [1,2,3] , [4,5,6] , [7,8,9]]
+print('the 3D ray is: ')
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        print(a[i][j], end='\t')
+    print('\n')
+x = 0
+y = 0
+sum = 0
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        k = int(a[x][y])
+        x += 1
+        if x == 3:
+            x = 0
+        sum = sum + k
+    y += 1
+    print('the sum of row 1 is :', sum)
+    sum = 0
+
+# sum of cloumn
+a = [ [1,2,3,4,5,6,6,7,8,8,23,42,1] , [4,5,6,1,123,23,4,12,1] , [7,8,9,5,6,6,]]
+print('the 3D ray is: ')
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        print(a[i][j], end='\t')
+    print('\n')
+x = 0
+y = 0
+sum = 0
+for i in range(len(a)):
+    for j in range(len(a[i])):
+        k = int(a[x][y])
+        y += 1
+        if y == len(a[i]):
+            y = 0
+        sum = sum + k
+    x += 1
+    print('the sum of row 1 is :', sum)
+    sum = 0
+'''
+# multiplication of matrix
+# matrix1 = [[1, 2, 3],
+#            [4, 5, 6],]
+# matrix2 = [[1, 2],
+#            [3, 4],
+#            [5, 6]]
+# x,y,m,n = 0, 0, 0, 0
+# sum = 0
+# finalmatrix = [ ]
+# for i in range(0,len(matrix1)):
+#     a = []
+#     for j in range(0,len(matrix2[0])):
+#         for k in range(0,len(matrix1[0])):
+#             print('x', x,'y',y,'m',m,'n',n)
+#             p = matrix1[x][y] * matrix2[m][n]
+#             print('p is',p)
+#             sum = sum + p
+#             a.append(sum)
+#             # print('a is',a)
+#             y += 1
+#             m += 1
+#             if y == len(matrix1[0]) and m == len(matrix2[0]):
+#                 y, m = 0, 0
+#     finalmatrix.append(a)
+#     sum = 0
+#     x += 1
+#     n += 1
+#     print('\n')
+#     print('a final value is ', a)
+# Matrix ( Nested list )Multiplication
+# Accepting First Matrix ( nested list )
+# r1 = int ( input ( 'no. of rows , m = ' ) )
+# c1 = int ( input ( 'no. of columns , n = ' ) )
+# matrix1 = [ ] # matrix as list is declared
+# for i in range( r1 ) :
+#  a = [ ] # a sub list is declared
+#  for j in range( c1 ) :
+#   print('Enter value for row ',i,' Col ',j,' : ',end =" = ")
+#   a . append(int(input( ) ) ) # Sub list is appended
+#  matrix1 . append(a) # Main list got appended from sub list
+#  #print
+# for i in range( r1 ) : # printing matrix1
+#  for j in range( c1 ) :
+#   print( matrix1[i][j],end = '\t',)
+#  print("\n")
+# # Accepting Second Matrix ( nested list )
+# r2 = int ( input ( 'no. of rows , m = ' ) )
+# c2 = int ( input ( 'no. of columns , n = ' ) )
+# matrix2 = [ ] # matrix as list is declared
+# for i in range( r2 ) :
+#  a = [ ] # a sub list is declared
+#  for j in range( c2 ) :
+#   print( 'Enter value for row ',i,' Col ',j,' : ',end =" = ")
+#   a . append(int(input( ) ) ) # Sub list is appended
+#  matrix2 . append(a) # Main list got appended
+#  #print("\n")
+# for i in range( r2 ) : # printing matrix2
+#  for j in range( c2 ) :
+#   print( matrix2[i][j],end ='\t',)
+#  print("\n")
+#
+#
+# # Multiplication * * * * *
+# print("Matrix Multiplication will be : ")
+# matrix = [ ] # matrix as list is declared
+# for i in range( r1 ) :
+#  a = [ ]
+#  for j in range( c2 ) :
+#   s = 0
+#   for k in range(c1):
+#    s = s + matrix1[i][k] * matrix2[k][j]
+#   a . append( s ) # Sub list is appended
+#  matrix.append(a)
+# for i in range( r1 ) : # printing matrix
+#  for j in range( c2 ) :
+#   print( matrix[i][j],end ='\t',)
+#  print("\n")
+#  '''this is a nice theme now'''
+# a = ['I', 'N', 'D', 'I', 'A']
+# c = max(a)
+# print(c)
+# print(ord(c))
+# for i in a:
+#     print(i,'\t',ord(i))
+# b = [1,2,1,1,1,1,2,2,2,2,3,3,3,]
+# b.clear()
+# n = int(input('enter the number of elements: '))
+# for i in range(n):
+#     a = int(input('element: '))
+#     b.append(a)
+# b.sort()
+# print('this is max', max(b))
+# print(b[n-1])
+# print(b)
+# arr = [ 12,32,34,45,57,88]
+# length = len(arr)
+# print("The Original a list is = ",arr)
+# for i in range (0,length) :
+#      b = 1
+#      num = arr[i]
+#      sum = 0
+#      while b != 0 :
+#          a = num / 10
+#          b = int(a)
+#          c = b * 10
+#          d = num - c
+#          sum = sum + d
+#          num = b
+#     print(arr[i] ," gives ",sum)
+arr = [ [1,2] , [3,4] , [ 5,6]]
+for i in range(len(arr)):
+    for j in range(len(arr[i])):
+        print(arr[i][j], end = "\t")
+    print('\n')
