@@ -1,0 +1,91 @@
+# tuple
+# t = tuple('hello')
+# print(type(t))
+# print(t)
+
+# t = tuple(input('enter the element for tuple: '))
+# print(type(t))
+# print(t)
+
+# t = (11,22,33,44,55 )
+# for i in t:
+#     print(t.index(i),'\t', i)
+
+# t1 = (11,22,33,44,55)
+# a = [(3,4), (6,7), (9,10)]
+# a[0][0] = 34
+# print(a)
+#
+# t = 13, #OR # to prepare a tuple , is very important
+# t = ( 14 , ) # Both the ways are right
+# print( t )
+#
+# t = (11,22,33,44,55 ) #+ve index 0 1 2 3 4
+# print('+ve index : \n0 1 2 3 4 5')
+# print (t[0], t[1], t[2], t[3], t[4]) #Output : 11 22 33 44 55
+# print (t[-1], t[-2], t[-3] , t[-4], t[-5])
+# t = tuple(range(6))
+# b = tuple(range(100,110, 2))
+# print(t)
+# c = list(t)
+# print(c, type(c))
+# c[0] = "replaced"
+# c = tuple(c)
+# print(c, type(c))
+#
+# c = tuple(range(1,6))
+# print(c, type(c))
+# _, x, y, z, _ = c
+# print('values ', x,y,z)
+
+
+# c = 1,
+# print(c, type(c))
+
+
+# c = "a", "this", "is", "a", "sentence"
+# c = 1,2,3,4,5,6
+# c1 = 'a', 'b', 'zzc', 'zd','eat'
+# # print(c, type(c))
+# print(max(c1))
+#
+# t1 = 1, 2, 4, 5, 6, 7
+# t2 = range(1,11)
+# rev_t1 = t1[::-1]
+# print(t1)
+# print(rev_t1)
+# # or 2nd method to do the same thing
+# t1 = tuple(reversed(t1))
+# print(t1)
+
+# t1 = 2, 3, 4, 5, 6, 7, 8, 10
+# print('',t1[::-1],' \n',t1)
+
+# weird
+
+# i = "anything"
+# t1 = "this " * 340
+# print(t1, "type", type(t1))
+
+#
+# tp = (11, 33, 55)
+# x, y, z = tp
+# x = 12
+# y = 22
+# tp = (x, y, z)
+# print(tp)
+#
+# print('2nd method, this is it.............................')
+# tp = (11, 33, 55)
+# temp_tp = list(tp)
+# temp_tp[0] = "hahahahaha"
+# temp_tp[1] = "zhacked"
+# temp_tp[2] = "ajust kidding"
+# tp = tuple(temp_tp)
+# print(tp)
+# print(temp_tp)
+# temp_tp.sort()
+# print(temp_tp)
+
+tp = (11,) * 3
+print(tp)
